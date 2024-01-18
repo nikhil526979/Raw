@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(#2b1055, #7597de);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            padding: 30px 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            color: whitesmoke;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: whitesmoke;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover,
+        header ul li a.logo2 {
+            background: whitesmoke;
+            color: #2b1055;
+        }
+
+
+
+
+        .mainbox {
+            backdrop-filter: blur(10px);
+            height: auto;
+            width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+            margin-bottom: 6%;
+            border: 1px solid white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .em {
+            background: transparent;
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid white;
+            color: azure;
+            font-size: 18px;
+            padding-bottom: 10px;
+            margin-bottom: 35px;
+
+        }
+
+        ::placeholder {
+            color: white;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        #sub {
+            margin-top: 20px;
+            width: 180px;
+            height: 30px;
+            color: black;
+            border-radius: 50px;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <a href="home.html" target="_main"><img src="Logo(1).png" alt=Logo style="z-index: 20;height: 90px;"></a>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="signup.html" class="logo1" class="logo" >Signup</a></li>
+            <li><a href="login.html" class="logo2" class="logo">Login</a></li>
+            <li><a href="feedback.html" class="logo3" class="logo">Feedback</a></li>
+            <li><a href="contact.html" class="logo4" class="logo">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="mainbox">
+        <form action="notelog.html">
+            <h1 id="heading">Login</h1>
+            <input type="email" id="mail" placeholder="Email" name="Email" class="em" required>
+            <input type="password" id="pass" placeholder="Password" name="Pass" value="" class="em" required
+                minlength="5">
+            <br>
+            <input type="checkbox" name="r" id="rem"><label for="rem" id="rem1" style="color: aliceblue;">Remember me</label>
+            <br>
+            <input type="submit" value="Login" id="sub">
+            <br><br>
+            <p id="dacc" style="color: aliceblue;">Don't have an account <a id="reg" href="signup.html" style="color: aliceblue;">register</a></p>
+            <br>
+            <a href="#" style=" color: aliceblue;" id="fp">Forgot Password</a>
+            <br><br>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
